@@ -1,3 +1,4 @@
+import 'package:circles_app/pages/placard_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,33 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Circles'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Text(
-          'Welcome to circles !',
-        ),
-      ),
-      // This trailing comma makes auto-formatting nicer for build methods.
+      home: MonPlacard(),
     );
   }
 }
